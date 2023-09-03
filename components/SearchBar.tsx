@@ -45,7 +45,7 @@ const SearchBar = () => {
             placeholder="Search..."
             value={query}
             onChange={handleInputChange}
-            className="flex w-full justify-between px-6 py-2 rounded-full border-2 border-zinc-300 bg-transparent"
+            className="w-full rounded-full border-2 border-zinc-300 bg-transparent"
           />
           <button
             onClick={() => {
