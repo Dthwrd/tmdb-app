@@ -5,8 +5,8 @@ const PersonDetailsSkeleton = () => {
     <div>
       <div className="px-8 h-full">
         <div className="flex flex-col xl:flex-row gap-x-16 py-16 w-full h-full">
-          <div className="overflow-hidden rounded-lg w-[23%] h-[40rem] bg-zinc-800 animate-pulse"></div>
-          <div className="flex flex-col gap-y-6 md:gap-y-5 w-full xl:w-[40%] h-full p-6">
+          <div className="overflow-hidden rounded-lg w-full md:w-[23%] h-[40rem] bg-zinc-800 animate-pulse"></div>
+          <div className="flex flex-col gap-y-6 md:gap-y-5 w-full xl:w-[40%] h-full py-16">
             <div className="flex md:justify-start items-center xl:gap-x-6">
               <div className="h-14 w-44 bg-zinc-800 animate-pulse"></div>
             </div>

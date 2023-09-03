@@ -33,7 +33,7 @@ const SeasonList = ({
           key={i}
           className="flex flex-col md:flex-row gap-y-4 md:gap-x-8 w-full h-full"
         >
-          <div className="w-full md:w-[48rem] h-72 rounded-md overflow-hidden">
+          <div className="w-full md:w-[48rem] h-60 md:h-72 rounded-md overflow-hidden">
             <Image
               src={
                 season.still_path
@@ -60,9 +60,9 @@ const SeasonList = ({
                 </span>
               </div>
             </div>
-            <div>
+            <div className="hidden md:block ">
               <h1 className="font-semibold">Overview</h1>
-              <p className="hidden md:block text-sm">{season.overview}</p>
+              <p className="text-sm">{season.overview}</p>
             </div>
             <div className="grid grid-cols-2 w-96">
               <div>

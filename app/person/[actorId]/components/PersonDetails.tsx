@@ -25,7 +25,7 @@ const PersonDetails = ({ person_id }: { person_id: string }) => {
   return (
     <div>
       <div className="px-8 h-full">
-        <div className="flex flex-col xl:flex-row gap-x-16 py-16 w-full h-full">
+        <div className="flex flex-col md:flex-row gap-y-16 md:gap-x-16 md:py-16 w-full h-full">
           <div className="overflow-hidden rounded-lg w-full md:w-[30%] h-full">
             <Image
               src={`https://image.tmdb.org/t/p/original${person.profile_path}`}
