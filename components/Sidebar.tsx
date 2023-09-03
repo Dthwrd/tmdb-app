@@ -20,7 +20,7 @@ const Sidebar = () => {
   return (
     <>
       <aside
-        className={`fixed z-50 px-8 w-72 bg-zinc-950 h-full overflow-scroll duration-500 ${
+        className={`fixed z-50 px-8 w-72 bg-zinc-950 h-screen overflow-scroll duration-500 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

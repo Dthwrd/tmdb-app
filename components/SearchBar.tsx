@@ -34,11 +34,11 @@ const SearchBar = () => {
   return (
     <>
       <div
-        className={`z-50 px-8 bg-zinc-950 h-screen w-screen overflow-y-scroll duration-500 ${
+        className={`z-50 px-4 md:px-8 bg-zinc-950 h-screen w-screen overflow-y-scroll duration-500 ${
           openSearchBar ? "fixed" : "hidden"
         }`}
       >
-        <div className="h-20 w-full gap-x-4 flex justify-center items-center mb-6">
+        <div className="h-20 w-full gap-x-4 flex justify-center items-center mb-4 md:mb-6">
           <input
             ref={(inp) => inp?.focus()}
             type="text"
@@ -59,13 +59,13 @@ const SearchBar = () => {
         {debounce.length <= 3 ? (
           ""
         ) : isLoading ? (
-          <p className="pl-14">Loading...</p>
+          <p className="px-6 md:px-14">Loading...</p>
         ) : (
           <ul>
             {data.results.slice(0, 10).map((result: any, i: number) => (
               <li
                 key={i}
-                className="w-full flex gap-4 p-2 px-14 cursor-pointer hover:bg-zinc-900"
+                className="w-full flex gap-4 p-2 px-6 md:px-14 cursor-pointer hover:bg-zinc-900"
                 onClick={() => {
                   router.push(`/${result.media_type}/${result.id}`);
                   setOpenSearchBar(!openSearchBar);

@@ -48,7 +48,7 @@ const SeasonList = ({
           </div>
           <div className="flex flex-col gap-y-4 w-full">
             <div className="flex flex-col items-start text-xs">
-              <h1 className="text-3xl font-semibold">
+              <h1 className="text-2xl md:text-3xl font-semibold">
                 {season.episode_number}.{season.name}
               </h1>
               <div className="flex mt-2 items-center">

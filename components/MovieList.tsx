@@ -25,7 +25,7 @@ const MovieList = ({
   return (
     <div className="px-16 md:px-8 w-full">
       <h1 className="text-xl text-center font-semibold">{title}</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-16 py-16 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 gap-16 py-16 justify-items-center">
         {data.results.map((movie: any) => (
           <Link key={movie.id} href={`/${type}/${movie.id}`}>
             <Card width="full" movie={movie} />
