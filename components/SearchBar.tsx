@@ -45,7 +45,7 @@ const SearchBar = () => {
             placeholder="Search..."
             value={query}
             onChange={handleInputChange}
-            className="w-full rounded-full border-2 border-zinc-300 bg-transparent"
+            className="h-full w-full rounded-full border-2 border-zinc-300 bg-transparent"
           />
           <button
             onClick={() => {
