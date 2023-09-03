@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+
 export const searchData = async (searchQuery: string) => {
   const options = {
     method: 'GET',
@@ -7,7 +9,7 @@ export const searchData = async (searchQuery: string) => {
     params: {query: searchQuery, page: '1'},
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZmIxNWIwMzczZmZmODcxZWRiYzlhYTIwZWZhYjNiMSIsInN1YiI6IjY0YjYzMjUyMzc4MDYyMDBhZDE2MWEyZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.YedbEyviTWng8tz959ZRYomU0PQsItqX08tU6WymeyM'
+      Authorization: `Bearer ${API_KEY}`
     }
   };
 
