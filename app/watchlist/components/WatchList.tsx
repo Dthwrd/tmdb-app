@@ -30,7 +30,7 @@ const WatchList = () => {
           </div>
           <div className="flex flex-col gap-y-4 w-full">
             <div className="flex gap-x-8 items-center justify-between md:justify-start">
-              <div className="flex flex-col items-start text-xs w-44 md:full">
+              <div className="flex flex-col items-start text-xs w-44 md:w-full">
                 <h1 className="text-2xl md:text-4xl font-semibold">{data.title}</h1>
                 <div className="flex mt-2 items-center">
                   <span className="border border-1 border-white p-[0.20rem] px-2 mr-2 rounded-md text-[0.6rem]">

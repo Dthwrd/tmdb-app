@@ -3,7 +3,7 @@ import React from "react";
 const DetailsSkeleton = () => {
   return (
     <div className="relative flex flex-col justify-start xl:justify-center items-center xl:items-start xl:flex-row gap-6 w-full">
-      <div className="bg-zinc-800 animate-pulse w-80 xl:w-96 h-[30rem] mt-24 xl:h-[35rem] xl:m-6 xl:mx-0 rounded-xl" />
+      <div className="bg-zinc-800 animate-pulse w-80 md:w-96 h-[30rem] mt-24 md:h-[35rem] md:m-6 md:mx-0 rounded-xl" />
       <div className="flex flex-col gap-y-6 md:gap-y-5 w-full xl:w-[40%] h-full p-6">
         <div className="flex md:justify-start items-center xl:gap-x-6">
           <div className="h-14 w-44 bg-zinc-800 animate-pulse"></div>
