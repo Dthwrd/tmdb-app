@@ -24,7 +24,7 @@ const watchProvider = [
 
 const WatchProvider = () => {
   return (
-    <div className="px-8 py-16">
+    <div className="px-8 py-8 md:py-16">
       <h1 className="text-xl font-semibold mb-8">Watch on</h1>
       <div className="flex gap-x-6 md:gap-x-8">
         {watchProvider.map((watch, i) => (
